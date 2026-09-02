@@ -1,0 +1,495 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111111;
+}
+
+
+/* =========================================
+   CONTENEDOR PRINCIPAL
+========================================= */
+
+.contenedor {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid #eeeeee;
+
+    margin-bottom: 24px;
+}
+
+
+/* LOGO */
+
+.brand {
+    font-size: 11px;
+    font-weight: bold;
+
+    width: 75px;
+}
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    flex: 1;
+}
+
+.menu a {
+    text-decoration: none;
+
+    color: #777777;
+
+    font-size: 8px;
+}
+
+.menu a.activo {
+    color: #111111;
+}
+
+
+/* CARRITO */
+
+.carrito {
+    font-size: 14px;
+
+    color: #111111;
+}
+
+
+/* =========================================
+   TITULO
+========================================= */
+
+.productos h1 {
+    font-size: 17px;
+
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================
+   BUSCADOR
+========================================= */
+
+.buscador {
+    display: flex;
+
+    gap: 6px;
+
+    margin-bottom: 10px;
+}
+
+
+.input-busqueda {
+    height: 30px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 5px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 8px;
+
+    flex: 1;
+
+    background: #ffffff;
+}
+
+
+.input-busqueda i {
+    color: #777777;
+
+    font-size: 9px;
+
+    margin-right: 5px;
+}
+
+
+.input-busqueda input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 8px;
+
+    color: #333333;
+}
+
+
+.input-busqueda input::placeholder {
+    color: #999999;
+}
+
+
+.buscador button {
+    height: 30px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 5px;
+
+    background: #f8f8f8;
+
+    padding: 0 10px;
+
+    font-size: 8px;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.productos-grid {
+    margin: 0 -4px;
+}
+
+
+.producto-item {
+    padding: 4px;
+    margin-bottom: 2px;
+}
+
+
+/* =========================================
+   TARJETA ESCRITORIO
+========================================= */
+
+.producto-card {
+    width: 100%;
+
+    background: white;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================
+   IMAGEN ESCRITORIO
+========================================= */
+
+.producto-imagen {
+    height: 125px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px;
+
+    /* Fondo gris claro de la referencia */
+    background: #f5f5f5;
+
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.producto-imagen img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* =========================================
+   DATOS
+========================================= */
+
+.producto-datos {
+    padding: 7px 8px 9px;
+}
+
+
+.producto-datos h2 {
+    font-size: 8px;
+
+    font-weight: 600;
+
+    margin-bottom: 2px;
+
+    color: #222222;
+}
+
+
+.precio {
+    font-size: 8px;
+
+    margin-bottom: 2px;
+
+    color: #333333;
+}
+
+
+/* =========================================
+   ESTRELLAS
+========================================= */
+
+.estrellas {
+    display: flex;
+
+    gap: 1px;
+}
+
+
+.estrellas i {
+    font-size: 6px;
+
+    color: #f5b700;
+}
+
+
+/* =========================================
+   PAGINACIÓN
+========================================= */
+
+.paginacion {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 5px;
+
+    margin-top: 12px;
+}
+
+
+.pagina {
+    width: 22px;
+
+    height: 22px;
+
+    border: none;
+
+    border-radius: 3px;
+
+    background: white;
+
+    font-size: 8px;
+
+    cursor: pointer;
+
+    color: #555555;
+}
+
+
+.pagina.activa {
+    background: #0d6efd;
+
+    color: white;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .contenedor {
+        max-width: 500px;
+    }
+
+}
+
+
+/* =========================================
+   MOVIL
+========================================= */
+
+
+@media (max-width: 576px) {
+
+    /* Fondo gris únicamente en móvil */
+    body {
+        background: #f3f3f3;
+    }
+
+    .contenedor {
+        width: 100%;
+        max-width: 360px;
+        padding: 14px;
+    }
+
+    /* HEADER */
+
+    .header {
+        height: 34px;
+        margin-bottom: 18px;
+    }
+
+    .brand {
+        width: 55px;
+        font-size: 10px;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 7px;
+    }
+
+    .carrito {
+        font-size: 13px;
+    }
+
+    /* TITULO */
+
+    .productos h1 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    /* BUSCADOR */
+
+    .buscador {
+        margin-bottom: 8px;
+    }
+
+    .input-busqueda {
+        height: 27px;
+        padding: 0 6px;
+        background: #ffffff;
+    }
+
+    .input-busqueda i {
+        font-size: 8px;
+    }
+
+    .input-busqueda input {
+        font-size: 7px;
+    }
+
+    .buscador button {
+        height: 27px;
+        font-size: 7px;
+        padding: 0 8px;
+    }
+
+    /* PRODUCTOS */
+
+    .producto-item {
+        width: 100%;
+        padding: 3px;
+        margin-bottom: 3px;
+    }
+
+    .producto-card {
+        display: flex;
+        flex-direction: row;
+        height: 70px;
+
+        /* La card permanece blanca */
+        background: #ffffff;
+
+        /* Sombra inferior más visible */
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.10);
+    }
+
+    /* IMAGEN */
+
+    .producto-imagen {
+        width: 75px;
+        min-width: 75px;
+        height: 100%;
+        padding: 6px;
+    }
+
+    .producto-imagen img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /* INFORMACIÓN */
+
+    .producto-datos {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px 7px;
+    }
+
+    .producto-datos h2 {
+        font-size: 8px;
+        margin-bottom: 2px;
+    }
+
+    .precio {
+        font-size: 7px;
+        margin-bottom: 2px;
+    }
+
+    .estrellas i {
+        font-size: 5px;
+    }
+
+    /* PAGINACIÓN */
+
+    .paginacion {
+        margin-top: 10px;
+    }
+
+    .pagina {
+        width: 21px;
+        height: 21px;
+        font-size: 7px;
+        background: #ffffff;
+    }
+
+}
